@@ -1,0 +1,156 @@
+/* Common Styles */
+html, body {
+    height: 100%;  /* Ensures the body fills the full height of the viewport */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;  /* Reduced vertical padding to decrease height */
+    align-items: center; /* Added to vertically center the content */
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Bloom Theme Nav Styles */
+.bloom-theme nav a:hover {
+    background-color: #f5a8a8;
+}
+
+/* Decay Theme Nav Styles */
+.decay-theme nav a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100% - 70px);  /* Adjusted height accounting for the changed header height */
+}
+
+h1 {
+    font-size: 3.5rem;  /* Increased font size */
+    margin: 0;  /* Remove default margin */
+}
+
+h2 {
+    border-bottom: 1px solid;
+    padding-bottom: 10%;
+    margin-top: 30px;
+}
+
+.box {
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Bloom Theme */
+.bloom-theme {
+    background: linear-gradient(to bottom, green, pink);
+    color: #4b3f72;
+}
+
+.bloom-theme header {
+    background-color: #ffc0cb;
+}
+
+.bloom-theme .box {
+    background-color: rgba(255, 228, 225, 0.7);
+    border: 1px solid #f5a8a8;
+}
+
+/* Decay Theme */
+.decay-theme {
+    background: linear-gradient(to bottom, rgba(67, 3, 3, 0.816), rgb(0, 0, 0));
+    color: #ddd;
+}
+
+.decay-theme header {
+    background-color: #31312e;
+}
+
+.decay-theme .box {
+    background-color: rgba(85, 85, 85, 0.7);
+    border: 1px solid #444;
+}
+
+/* Bloom Theme Button Style */
+.bloom-theme button#theme-toggle {
+    background: linear-gradient(to right, red, black);
+    color: #ddd;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;  /* Increased horizontal padding for more width */
+    cursor: pointer;
+    font-size: 2rem;   /* Larger text size */
+    font-family: 'Creepster', cursive;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px pink, 0 0 30px pink, 0 0 60px pink;
+}
+
+.bloom-theme button#theme-toggle:hover {
+    background: linear-gradient(to left, red, black);
+    box-shadow: 0 0 15px pink, 0 0 35px pink, 0 0 75px pink;
+}
+
+/* Decay Theme Button Style */
+.decay-theme button#theme-toggle {
+    background: linear-gradient(to right, green, pink);
+    color: #4b3f72;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;  /* Increased horizontal padding for more width */
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Dancing Script;
+    
+}
+
+/* Bloom Theme H1 Style */
+.bloom-theme h1 {
+    font-family: 'Dancing Script', cursive;  /* Dancing Script for Bloom */
+    color: green;
+    padding: 15px;
+}
+
+/* Decay Theme H1 Style */
+.decay-theme h1 {
+    font-family: 'Creepster', cursive;  /* Creepster for Decay */
+    color: #f62a07;
+    padding: 15px;
+}
+
+
+/* Bloom Theme Cursor */
+.bloom-theme {
+    cursor: url('path/to/flower_cursor.png'), auto;
+}
+
+/* Decay Theme Cursor */
+.decay-theme {
+    cursor: url('path/to/tombstone_cursor.png'), auto;
+}
+
+
+
+
+
+
+
